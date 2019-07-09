@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/hero_bg_gradient"
-    tools:context=".Fragments.MainFragment"
-    >
+    tools:context=".Fragments.MainFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
@@ -37,66 +36,63 @@
             android:src="@drawable/heroes" />
 
         <Button
+            android:id="@+id/accidentBtn"
             android:layout_width="300dp"
             android:layout_height="55dp"
-            android:text="Came by accident"
-            android:id="@+id/accidentBtn"
             android:layout_gravity="center_horizontal"
-            android:background="@drawable/hero_button"
-            android:textColor="#FAC740"
             android:layout_marginTop="15dp"
+            android:background="@drawable/hero_button"
             android:drawableLeft="@drawable/lightning"
-            android:drawableRight="@drawable/item_selected"
             android:paddingLeft="5dp"
             android:paddingRight="10dp"
+            android:text="Came by accident"
             android:textAllCaps="false"
+            android:textColor="#FAC740"
+
             />
 
         <Button
+            android:id="@+id/geneticBtn"
             android:layout_width="300dp"
             android:layout_height="55dp"
-            android:text="Genetic Mutation"
-            android:id="@+id/geneticBtn"
             android:layout_gravity="center_horizontal"
-            android:background="@drawable/hero_button"
-            android:textColor="#FAC740"
             android:layout_marginTop="15dp"
+            android:background="@drawable/hero_button"
             android:drawableLeft="@drawable/atomic"
             android:paddingLeft="5dp"
             android:paddingRight="10dp"
+            android:text="Genetic Mutation"
             android:textAllCaps="false"
-            />
+            android:textColor="#FAC740" />
 
         <Button
+            android:id="@+id/bornBtn"
             android:layout_width="300dp"
             android:layout_height="55dp"
-            android:text="Born with them"
-            android:id="@+id/bornBtn"
             android:layout_gravity="center_horizontal"
-            android:background="@drawable/hero_button"
-            android:textColor="#FAC740"
             android:layout_marginTop="15dp"
+            android:background="@drawable/hero_button"
             android:drawableLeft="@drawable/rocket"
             android:paddingLeft="5dp"
             android:paddingRight="10dp"
+            android:text="Born with them"
             android:textAllCaps="false"
-            />
+            android:textColor="#FAC740" />
 
         <Button
+            android:id="@+id/chooseBtn"
             android:layout_width="300dp"
             android:layout_height="55dp"
-            android:text="Choose powers"
-            android:id="@+id/chooseBtn"
             android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
             android:background="@drawable/hero_solid_button"
             android:backgroundTint="#FAC740"
-            android:textColor="#101A22"
-            android:layout_marginTop="15dp"
             android:paddingLeft="5dp"
             android:paddingRight="10dp"
+            android:text="Choose powers"
             android:textAllCaps="true"
-            android:textSize="22sp"
-            />
+            android:textColor="#101A22"
+            android:textSize="22sp" />
 
     </LinearLayout>
 
