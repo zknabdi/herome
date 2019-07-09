@@ -13,7 +13,7 @@ import com.herome.R;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link MainFragment.OnFragmentInteractionListener} interface
+ * {@link MainFragment.MainFragementInteractionListener} interface
  * to handle interaction events.
  * Use the {@link MainFragment#newInstance} factory method to
  * create an instance of this fragment.
@@ -28,7 +28,7 @@ public class MainFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    private OnFragmentInteractionListener mListener;
+    private MainFragementInteractionListener mListener;
 
     public MainFragment() {
         // Required empty public constructor
@@ -78,11 +78,11 @@ public class MainFragment extends Fragment {
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        if (context instanceof OnFragmentInteractionListener) {
-            mListener = (OnFragmentInteractionListener) context;
+        if (context instanceof MainFragementInteractionListener) {
+            mListener = (MainFragementInteractionListener) context;
         } else {
             throw new RuntimeException(context.toString()
-                    + " must implement OnFragmentInteractionListener");
+                    + " must implement MainFragementInteractionListener");
         }
     }
 
@@ -102,7 +102,7 @@ public class MainFragment extends Fragment {
      * "http://developer.android.com/training/basics/fragments/communicating.html"
      * >Communicating with Other Fragments</a> for more information.
      */
-    public interface OnFragmentInteractionListener {
+    public interface MainFragementInteractionListener {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
     }
